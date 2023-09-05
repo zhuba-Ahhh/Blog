@@ -1,0 +1,22 @@
+{
+  "name": "zhuba-blog",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "npm run build:ssg && npm run rss",
+    "build:spa": "valaxy build",
+    "build:ssg": "valaxy build --ssg",
+    "dev": "valaxy",
+    "rss": "valaxy rss",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "valaxy": "0.14.56",
+    "valaxy-addon-components": "^0.0.2",
+    "valaxy-addon-waline": "^0.1.0",
+    "valaxy-theme-yun": "0.14.56"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
