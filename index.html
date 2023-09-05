@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/84793349?v=4">
+    <script>
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const colorSchemeSetting = localStorage.getItem('vueuse-color-scheme') || 'auto';
+    if (colorSchemeSetting === 'dark' || (prefersDark && colorSchemeSetting !== 'light')) {
+      document.documentElement.classList.toggle('dark', true);
+    }
+    </script>
+  
+    <script>
+    const locale = localStorage.getItem('valaxy-locale') || 'zh-CN';
+    document.documentElement.setAttribute('lang', locale);
+    </script>
+    
+  <script type="module" crossorigin src="/assets/index-42db3f6d.js"></script>
+  <link rel="stylesheet" href="/assets/index-d09e92a0.css">
+</head>
+<body>
+  <div id="app"></div>
+  
+  
+</body>
+</html>
